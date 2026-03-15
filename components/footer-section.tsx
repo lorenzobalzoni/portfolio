@@ -24,7 +24,7 @@ export function FooterSection() {
           {/* Top row with copyright and social links */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-16 border-b border-neutral-800/50">
             <p className="text-sm text-neutral-500">
-              © 2015 — 2026 Volodymyr Onishchenko
+              © 2023 — 2026 Lorenzo Balzoni
             </p>
             
             <div className="flex items-center gap-6">

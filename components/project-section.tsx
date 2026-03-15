@@ -5,25 +5,59 @@ import { ExternalLink, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
-const industryTags = ["SaaS", "API", "Telecom", "Messaging", "Big Data"]
+const industryTags = ["AI/ML", "AR", "SwiftUI", "Node.js", "Privacy", "Education"]
 
 const projects = [
   {
     id: 1,
-    status: "Now Building",
-    title: "Kyivstar API Portal",
+    status: "Featured Project",
+    title: "Mineralogy",
     description:
-      "The work focuses on making a diverse ecosystem of messaging and data products easy to adopt, integrate, and operate — for companies building on Kyivstar's platform at scale.",
-    image: "/images/api-portal-dashboard.jpg",
-    role: "Sr. Product Designer",
+      "An AI-powered app for mineral identification. Uses CoreML and Vision for instant identification, with SceneKit and ARKit for 3D exploration and real-time visualization of crystal structures.",
+    image: "/images/projects/mineralogy-1.png",
+    role: "Lead Developer",
     company: {
-      name: "Kyivstar",
+      name: "Personal Project",
       href: "#",
       description:
-        'is the largest telecom company in Ukraine, serving over 24 million users and the first in the country to go public on Nasdaq.',
+        'Closing the gap between flat textbook diagrams and interactive real-world learning.',
     },
-    industry: industryTags,
-    period: "2023 — Present",
+    industry: ["AI/ML", "AR", "SwiftUI"],
+    period: "2024 — Present",
+  },
+  {
+    id: 2,
+    status: "Privacy Tool",
+    title: "Entropy Dash",
+    description:
+      "A privacy-focused browser automation tool that generates random web traffic noise to confuse trackers and protect user identity using Puppeteer and Node.js.",
+    image: "/images/projects/entropy-dash.png", // Using a placeholder path for now
+    role: "Full Stack Developer",
+    company: {
+      name: "Privacy Tools",
+      href: "#",
+      description:
+        'A collection of utilities designed to enhance digital privacy and anonymity.',
+    },
+    industry: ["Node.js", "Puppeteer", "Privacy"],
+    period: "2023",
+  },
+  {
+    id: 3,
+    status: "Educational",
+    title: "Swift Manual",
+    description:
+      "A comprehensive educational resource covering the fundamentals of Swift development, concurrency, and SwiftUI patterns for developers of all levels.",
+    image: "/images/projects/swift-manual.png", // Using a placeholder path for now
+    role: "Author & Developer",
+    company: {
+      name: "Educational Resource",
+      href: "#",
+      description:
+        'Curated knowledge and implementation patterns for the Apple development ecosystem.',
+    },
+    industry: ["Swift", "SwiftUI", "Education"],
+    period: "2023 — 2024",
   },
 ]
 

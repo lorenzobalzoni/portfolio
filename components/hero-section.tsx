@@ -5,12 +5,14 @@ import { ArrowRight, Mail, Github, ExternalLink } from "lucide-react"
 import { useEffect, useState } from "react"
 
 const focusTags = [
-  "B2B",
-  "Design Overlay",
-  "Product Design",
-  "Accessibility",
-  "Data Visualization",
-  "Design System",
+  "SwiftUI",
+  "MapKit",
+  "SceneKit",
+  "Metal",
+  "Vision",
+  "Tailwind",
+  "Node",
+  "Python",
 ]
 
 // Animated grid background
@@ -123,7 +125,7 @@ export function HeroSection() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="block"
               >
-                Volodymyr
+                Lorenzo
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
@@ -131,7 +133,7 @@ export function HeroSection() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="block"
               >
-                Onishchenko
+                Balzoni
               </motion.span>
             </h1>
             <motion.p
@@ -140,7 +142,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="mt-6 text-lg text-neutral-400 max-w-md leading-relaxed"
             >
-              Designing the kind of products where simplicity is the hardest thing to achieve.
+              Building the future of digital experiences. 14yo developer focused on Apple platforms and web technologies.
             </motion.p>
             
             <motion.div
@@ -150,7 +152,7 @@ export function HeroSection() {
               className="mt-8 flex flex-wrap gap-3"
             >
               <motion.a
-                href="https://github.com"
+                href="https://github.com/lorenzobalzoni"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 0.98 }}
@@ -161,7 +163,7 @@ export function HeroSection() {
                 GitHub
               </motion.a>
               <motion.a
-                href="mailto:hello@example.com"
+                href="mailto:hello@lorenzobalzoni.com"
                 whileHover={{ scale: 0.98 }}
                 whileTap={{ scale: 0.96 }}
                 className="group inline-flex items-center gap-2 px-5 py-2.5 border border-neutral-700 bg-transparent text-neutral-300 text-sm font-medium rounded-lg transition-all duration-300 hover:bg-neutral-100 hover:text-neutral-900 hover:border-neutral-100"
@@ -188,13 +190,11 @@ export function HeroSection() {
               <p className="text-xs font-medium text-neutral-500 tracking-wide uppercase mb-2">
                 Currently
               </p>
-              <a
-                href="#"
+              <div
                 className="inline-flex items-center gap-1.5 text-neutral-200 hover:text-orange-500 transition-colors text-sm"
               >
-                Sr. Product Designer @Kyivstar.Tech
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
+                Student & Independent Developer
+              </div>
             </motion.div>
 
             {/* Focus */}
@@ -229,16 +229,16 @@ export function HeroSection() {
               className="grid grid-cols-3 gap-6 pt-6 border-t border-neutral-800/50"
             >
               <div>
-                <p className="text-2xl font-semibold text-neutral-100">8+</p>
-                <p className="text-xs text-neutral-500 mt-1">Years Experience</p>
+                <p className="text-2xl font-semibold text-neutral-100">3+</p>
+                <p className="text-xs text-neutral-500 mt-1">Years Coding</p>
               </div>
               <div>
-                <p className="text-2xl font-semibold text-neutral-100">50+</p>
-                <p className="text-xs text-neutral-500 mt-1">Projects Shipped</p>
+                <p className="text-2xl font-semibold text-neutral-100">12+</p>
+                <p className="text-xs text-neutral-500 mt-1">Projects Built</p>
               </div>
               <div>
-                <p className="text-2xl font-semibold text-neutral-100">24M</p>
-                <p className="text-xs text-neutral-500 mt-1">Users Reached</p>
+                <p className="text-2xl font-semibold text-neutral-100">5+</p>
+                <p className="text-xs text-neutral-500 mt-1">Tech Stacks</p>
               </div>
             </motion.div>
           </motion.div>
