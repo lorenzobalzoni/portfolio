@@ -3,9 +3,6 @@
 import { motion } from "framer-motion"
 import { ExternalLink, ArrowRight } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
-
-const industryTags = ["AI/ML", "AR", "SwiftUI", "Node.js", "Privacy", "Education"]
 
 const projects = [
   {
@@ -18,7 +15,6 @@ const projects = [
     role: "Lead Developer",
     company: {
       name: "Personal Project",
-      href: "#",
       description:
         'Closing the gap between flat textbook diagrams and interactive real-world learning.',
     },
@@ -35,7 +31,6 @@ const projects = [
     role: "Full Stack Developer",
     company: {
       name: "Privacy Tools",
-      href: "#",
       description:
         'A collection of utilities designed to enhance digital privacy and anonymity.',
     },
@@ -52,7 +47,6 @@ const projects = [
     role: "Author & Developer",
     company: {
       name: "Educational Resource",
-      href: "#",
       description:
         'Curated knowledge and implementation patterns for the Apple development ecosystem.',
     },
@@ -138,13 +132,9 @@ export function ProjectSection() {
                   Company
                 </p>
                 <div className="space-y-1">
-                  <a
-                    href={project.company.href}
-                    className="flex items-center gap-1 text-sm text-neutral-200 hover:text-orange-500 transition-colors"
-                  >
+                  <p className="text-sm text-neutral-200">
                     {project.company.name}
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
+                  </p>
                   <p className="text-xs text-neutral-500">
                     {project.company.description}
                   </p>
@@ -173,7 +163,7 @@ export function ProjectSection() {
             {/* View Case Study Button */}
             <div className="mt-10">
               <motion.a
-                href="#"
+                href="/work"
                 whileHover={{ scale: 0.98 }}
                 whileTap={{ scale: 0.96 }}
                 className="inline-flex items-center gap-2 px-5 py-2.5 border border-neutral-700 bg-transparent text-neutral-300 text-sm font-medium rounded-lg transition-all duration-300 hover:bg-neutral-100 hover:text-neutral-900 hover:border-neutral-100"

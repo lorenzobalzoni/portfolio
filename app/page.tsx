@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
+import { HomeSections } from "@/components/home-sections"
 import { FooterSection } from "@/components/footer-section"
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Navigation />
       <main>
         <HeroSection />
+        <HomeSections />
       </main>
       <FooterSection />
     </div>

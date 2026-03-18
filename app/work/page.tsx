@@ -1,12 +1,12 @@
-import { Navigation } from "@/components/navigation"
-import { ProjectSection } from "@/components/project-section"
-import { FooterSection } from "@/components/footer-section"
-import type { Metadata } from "next"
+import { Navigation } from "@/components/navigation";
+import { ProjectSection } from "@/components/project-section";
+import { FooterSection } from "@/components/footer-section";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Work | Alex Chen",
+  title: "Work | Lorenzo Balzoni",
   description: "Selected projects and case studies from my design career.",
-}
+};
 
 export default function WorkPage() {
   return (
@@ -17,5 +17,5 @@ export default function WorkPage() {
       </main>
       <FooterSection />
     </div>
-  )
+  );
 }

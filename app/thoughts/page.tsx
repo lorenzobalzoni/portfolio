@@ -1,12 +1,12 @@
-import { Navigation } from "@/components/navigation"
-import { ThoughtsSection } from "@/components/thoughts-section"
-import { FooterSection } from "@/components/footer-section"
-import type { Metadata } from "next"
+import { Navigation } from "@/components/navigation";
+import { ThoughtsSection } from "@/components/thoughts-section";
+import { FooterSection } from "@/components/footer-section";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Thoughts | Alex Chen",
+  title: "Thoughts | Lorenzo Balzoni",
   description: "Ideas, observations, and lessons learned along the way.",
-}
+};
 
 export default function ThoughtsPage() {
   return (
@@ -17,5 +17,5 @@ export default function ThoughtsPage() {
       </main>
       <FooterSection />
     </div>
-  )
+  );
 }

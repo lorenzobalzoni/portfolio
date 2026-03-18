@@ -5,10 +5,8 @@ import { ExternalLink } from "lucide-react"
 import { PixelatedText } from "./pixelated-text"
 
 const socialLinks = [
-  { label: "GITHUB", href: "https://github.com" },
-  { label: "X", href: "https://x.com" },
-  { label: "LINKEDIN", href: "https://linkedin.com" },
-  { label: "CODEPEN", href: "https://codepen.io" },
+  { label: "GITHUB", href: "https://github.com/lorenzobalzoni" },
+  { label: "EMAIL", href: "mailto:hello@lorenzobalzoni.com" },
 ]
 
 export function FooterSection() {
@@ -32,8 +30,8 @@ export function FooterSection() {
                 <a
                   key={link.label}
                   href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target={link.href.startsWith("http") ? "_blank" : undefined}
+                  rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="inline-flex items-center gap-1 text-xs font-medium text-neutral-400 hover:text-neutral-100 transition-colors tracking-wide"
                 >
                   {link.label}

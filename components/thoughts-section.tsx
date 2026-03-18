@@ -41,7 +41,7 @@ export function ThoughtsSection() {
               Latest Thoughts
             </h2>
             <motion.a
-              href="#"
+              href="/thoughts"
               whileHover={{ scale: 0.98 }}
               whileTap={{ scale: 0.96 }}
               className="inline-flex items-center gap-1.5 px-4 py-2 border border-neutral-700 bg-transparent text-sm text-neutral-400 rounded-lg transition-all duration-300 hover:bg-neutral-100 hover:text-neutral-900 hover:border-neutral-100"
@@ -91,7 +91,7 @@ export function ThoughtsSection() {
                     </div>
 
                     <motion.a
-                      href="#"
+                      href="/thoughts"
                       whileHover={{ scale: 0.98 }}
                       whileTap={{ scale: 0.96 }}
                       className="inline-flex items-center gap-1.5 text-sm text-orange-500 hover:text-orange-400 transition-colors font-medium w-fit"
