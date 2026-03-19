@@ -15,10 +15,20 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+// Upgraded Metadata to match your actual developer profile
 export const metadata: Metadata = {
-  title: "Lorenzo Balzoni | Senior Product Designer",
+  title: "Lorenzo Balzoni | iOS & Web Developer",
   description:
-    "Designing the kind of products where simplicity is the hardest thing to achieve.",
+    "Independent developer crafting digital experiences with precision and purpose. Focused on Apple platforms and web technologies.",
+  // Added OpenGraph data so links look great when shared on iMessage or Twitter
+  openGraph: {
+    title: "Lorenzo Balzoni | Developer",
+    description: "Building the future of digital experiences.",
+    url: "https://lorenzobalzoni.com", // Update this to your actual domain
+    siteName: "Lorenzo Balzoni",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export const viewport: Viewport = {
@@ -32,8 +42,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-sans antialiased">
+    <html 
+      lang="en" 
+      // Added smooth scrolling for anchor links
+      className={`${inter.variable} ${jetbrainsMono.variable} scroll-smooth`}
+    >
+      <body 
+        // Added strict dark mode baseline and custom orange text selection
+        className="font-sans antialiased bg-[#050505] text-neutral-100 selection:bg-[#FF5500]/30 selection:text-orange-100 min-h-screen flex flex-col"
+      >
         {children}
         <Analytics />
       </body>

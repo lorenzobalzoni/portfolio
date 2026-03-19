@@ -10,19 +10,26 @@
   --card-foreground: #e5e5e5;
   --popover: #0a0a0a;
   --popover-foreground: #e5e5e5;
-  --primary: #c2410c;
-  --primary-foreground: #fff7ed;
+  
+  /* Synced to your vibrant brand orange */
+  --primary: #FF5500; 
+  --primary-foreground: #ffffff;
+  
   --secondary: #171717;
   --secondary-foreground: #e5e5e5;
   --muted: #171717;
   --muted-foreground: #a3a3a3;
-  --accent: #c2410c;
-  --accent-foreground: #fff7ed;
+  
+  /* Synced to your vibrant brand orange */
+  --accent: #FF5500;
+  --accent-foreground: #ffffff;
+  
   --destructive: #7f1d1d;
   --destructive-foreground: #fecaca;
   --border: rgba(38, 38, 38, 0.5);
   --input: #262626;
-  --ring: #c2410c;
+  --ring: #FF5500;
+  
   --chart-1: #e5e5e5;
   --chart-2: #a3a3a3;
   --chart-3: #737373;
@@ -89,8 +96,10 @@
   }
 }
 
+/* Updated to brand orange for premium text highlighting */
 ::selection {
-  background-color: rgba(229, 229, 229, 0.15);
+  background-color: rgba(255, 85, 0, 0.25);
+  color: #ffffff;
 }
 
 html {
@@ -98,20 +107,21 @@ html {
   color-scheme: dark;
 }
 
-/* Custom scrollbar */
+/* Upgraded macOS-style floating scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 12px; /* Wider hit area, but the visible thumb is smaller */
 }
 
 ::-webkit-scrollbar-track {
-  background: #050505;
+  background: transparent; /* Makes the scrollbar float */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #262626;
-  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.15); /* Glassy pill */
+  border-radius: 10px;
+  border: 3px solid #050505; /* Matches background to create padding */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #404040;
+  background-color: rgba(255, 255, 255, 0.3); /* Brightens when interacted with */
 }

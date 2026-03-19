@@ -161,7 +161,7 @@ export function ProjectSection() {
             </div>
 
             {/* View Case Study Button */}
-            <div className="mt-10">
+            <div className="mt-8 mb-20">
               <motion.a
                 href="/work"
                 whileHover={{ scale: 0.98 }}
